@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Golf Teaching Pro</string>
+    <string name="menu_settings">언어설정</string>
+    <string name="menu_exit">종료</string>
+    <string name="menu_recorder">동영상촬영</string>
+    <string name="menu_videolist">비디오목록</string>
+    <string name="menu_help">도움말</string>
+    <string name="saved_tab_name">저장목록</string>
+    <string name="folder_tab_name">폴더</string>
+    <string name="alllist_tab_name">전체</string>
+    <string name="long_press_share">공유</string>
+    <string name="long_press_delete">삭제</string>
+    <string name="long_press_rename">이름변경</string>
+    <string name="same_title_exists">동일이름의 파일이 존재함</string>
+    <string name="share_text">동영상 공유</string>
+    <string name="rename_video">동영상 이름변경</string>
+    <string name="action_settings">정렬기준</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="sort_name_asc">이름순정렬(ㄱ~ㅎ)</string>
+    <string name="sort_name_dsc">이름순정렬(ㅎ~ㄱ)</string>
+    <string name="sort_date_asc">오래된 날짜순</string>
+    <string name="sort_date_dsc">최근 날짜순</string>
+    <string name="sort_size_asc">작은 파일순</string>
+    <string name="sort_size_dsc">큰 파일순</string>
+    <string name="ai_mode_text">AI 모드</string>
+</resources>

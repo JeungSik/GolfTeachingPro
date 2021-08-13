@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#009688</color>
+  <color name="colorPrimaryDark">#1B5E20</color>
+  <color name="colorAccent">#03DAC5</color>
+  <!--color name="colorToolBar">#D84315</color-->
+  <color name="colorToolBar">#448AFF</color>
+  <color name="colorToolBar_orange">#ff6f00</color>
+
+  <color name="white_90">#E6FFFFFF</color>
+  <color name="black_90">#E6000000</color>
+  <color name="orange">#F7931E</color>
+
+  <color name="main_title_color">#FFD600</color>
+
+  <color name="default_statusbar_color">#000000</color>
+  <color name="saved_tab_color">#F7931E</color>
+  <color name="saved_statusbar_color">@color/default_statusbar_color</color>
+  <color name="folder_tab_color">#425066</color>
+  <color name="folder_statusbar_color">@color/default_statusbar_color</color>
+  <color name="all_tab_color">#3F51B5</color>
+  <color name="all_statusbar_color">@color/default_statusbar_color</color>
+
+  <drawable name="item_white">#FFFFFF</drawable>
+  <drawable name="item_red">#FF0000</drawable>
+  <drawable name="item_blue">#0000FF</drawable>
+  <drawable name="item_yellow">#FFFF00</drawable>
+  <drawable name="item_green">#00FF00</drawable>
+  <drawable name="item_black">#000000</drawable>
+
+  <!--color name="tfe_color_primary">#ffa800</color-->
+  <color name="tfe_color_primary_dark">#ff6f00</color>
+  <color name="tfe_color_accent">#425066</color>
+  <color name="tfe_semi_transparent">#66000000</color>
+</resources>

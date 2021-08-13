@@ -1,0 +1,2 @@
+include ':app', ':utils', ':playercontrolview', ':balloon', ':cidrawinglib'
+include ':opencv'

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/colorToolBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleMarginStart="32dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cameraImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_camera"
+            app:tint="@color/tfe_color_primary_dark"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/folderImage"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_below="@+id/cameraImage"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="34dp"
+            android:layout_toStartOf="@+id/cameraImage"
+            app:srcCompat="@drawable/ic_folder"
+            app:tint="@color/main_title_color"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/referenceImage"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_below="@+id/folderImage"
+            android:layout_alignEnd="@+id/folderImage"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="64dp"
+            app:srcCompat="@drawable/ic_reference"
+            app:tint="@color/main_title_color"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/helpImage"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/referenceImage"
+            android:layout_alignEnd="@+id/referenceImage"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            app:srcCompat="@drawable/ic_help"
+            app:tint="@color/main_title_color"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_below="@+id/helpImage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="220dp"
+            app:srcCompat="@drawable/ic_golf_ball"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<resources>
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <!-- No Action Bar theme. -->
+  <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="android:windowDisablePreview">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <!--item name="android:itemBackground">@android:color/darker_gray</item-->
+    <!--item name="android:colorBackground">@android:color/darker_gray</item-->
+    <!--item name="android:textColor">@android:color/white</item-->
+    <item name="overlapAnchor">false</item>
+    <item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>
+  </style>
+
+  <!-- AppBar theme. -->
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <!-- Draw Menu theme. -->
+  <style name="CircleImageStyle" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">10%</item>
+  </style>
+
+  <!-- Posenet application theme. -->
+  <style name="AppTheme.Posenet" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/main_title_color</item>
+    <item name="colorPrimaryDark">@color/tfe_color_primary_dark</item>
+    <item name="colorAccent">@color/tfe_color_accent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="elevation">0dp</item>
+  </style>
+
+</resources>

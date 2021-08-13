@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_review"
+    app:startDestination="@id/review_fragment">
+
+    <fragment
+        android:id="@+id/review_fragment"
+        android:name="kr.co.anitex.golfteachingpro.MediaPlayerFragment"
+        android:label="Review" >
+
+        <!--argument
+            android:name="fileUri"
+            app:argType="string" /-->
+    </fragment>
+
+</navigation>

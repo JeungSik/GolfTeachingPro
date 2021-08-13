@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_camera"
+    app:startDestination="@id/camera_fragment">
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="kr.co.anitex.golfteachingpro.CameraFragment"
+        android:label="Camera" >
+
+        <action
+            android:id="@+id/action_camera_to_player"
+            app:destination="@id/player_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/player_fragment"
+        android:name="kr.co.anitex.golfteachingpro.MediaPlayerFragment"
+        android:label="Player" >
+
+        <argument
+            android:name="fileUri"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_player_to_preview"
+            app:destination="@id/camera_fragment"
+            app:popUpTo="@id/camera_fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>

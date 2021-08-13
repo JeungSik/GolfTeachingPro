@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <kr.co.anitex.golfteachingpro.utils.AutoFitTextureView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/recording_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@id/view_finder"
+        android:background="@drawable/shape_recording_notify"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,HardcodedText,Orientation"
+        android:contentDescription="TODO" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="match_parent"
+        android:layout_height="@id/view_finder"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="@string/banner_size"
+        ads:adUnitId="@string/banner_unit_id"
+        ads:layout_constraintTop_toBottomOf="@id/recording_button"
+        ads:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/recording_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_recoding"
+        android:contentDescription="@string/capture"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/view_finder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/switch_camera_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/ic_flip_camera_white"
+        app:layout_constraintTop_toBottomOf="@id/view_finder"
+        app:layout_constraintLeft_toRightOf="@id/recording_button"
+        tools:ignore="ContentDescription" />
+
+    <Switch
+        android:id="@+id/ai_mode_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:checked="true"
+        android:switchMinWidth="50dp"
+        android:text="ON"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/view_finder"
+        app:layout_constraintEnd_toStartOf="@+id/recording_button"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/ai_mode_text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="@string/ai_mode_text"
+        android:textColor="@color/white_90"
+        app:layout_constraintBottom_toTopOf="@+id/ai_mode_switch"
+        app:layout_constraintEnd_toStartOf="@+id/recording_button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/recording_time_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:text="REC"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:drawableLeftCompat="@drawable/ic_recording_signal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/recording_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recording_time_signal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

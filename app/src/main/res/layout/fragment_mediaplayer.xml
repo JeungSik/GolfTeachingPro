@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <SurfaceView
+        android:id="@+id/video_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?android:attr/actionBarSize"/>
+
+    <kr.co.anitex.golfteachingpro.playercontrolview.PlayerControlView
+        android:id="@+id/video_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_viewer"
+        android:layout_alignParentStart="true"
+        app:pcv_fast_forward_ms="1"
+        app:pcv_fast_rewind_ms="1"
+        app:pcv_always_show="true"/>
+
+    <include layout="@layout/draw_menubar"/>
+
+    <com.mocircle.cidrawing.view.CiDrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/video_controller"
+        ads:adSize="@string/banner_size"
+        ads:adUnitId="@string/banner_unit_id"
+        ads:layout_constraintTop_toBottomOf="@id/video_controller"
+        ads:layout_constraintBottom_toBottomOf="parent" />
+
+</RelativeLayout>

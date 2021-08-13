@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">Golf Teaching Pro</string>
+  <string name="tfe_pn_app_name" translation_description="Posenet demo app built with Posenet library [CHAR_LIMIT=40]" translatable="false">TFL Posenet</string>
+  <string name="tfe_pn_request_permission" translation_description="Request camera permission [CHAR_LIMIT=40]" translatable="false">This app needs CAMERA permission.</string>
+  <string name="tfe_pn_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]" translatable="false">This device doesn\'t support Camera2 API.</string>
+  <string name="copyright" translatable="false">®Artificial Intelligence Golf Teaching, Inc. All Rights Reserved</string>
+  <string name="capture" translatable="false">Capture</string>
+  <string name="description" translatable="false">Media Controls</string>
+
+  <!-- Admob ad unit IDs -->
+  <string name="banner_size" translatable="false">SMART_BANNER</string>
+  <string name="banner_unit_id" translatable="false">ca-app-pub-1182326191871313/7257458162</string>
+
+  <!-- Main activity menu items -->
+  <string name="menu_settings">Language Setting</string>
+  <string name="menu_exit">Exit</string>
+
+  <!-- Main activity main button names -->
+  <string name="menu_recorder">RECORDER</string>
+  <string name="menu_videolist">VIDEOLIST</string>
+  <string name="menu_help">HELP</string>
+
+  <!-- Videolist Tab titles -->
+  <string name="saved_tab_name">Saved</string>
+  <string name="folder_tab_name">Folders</string>
+  <string name="alllist_tab_name">All</string>
+
+  <!-- Videolist long press menu items -->
+  <string name="long_press_share">Share</string>
+  <string name="long_press_delete">Delete</string>
+  <string name="long_press_rename">Rename</string>
+
+  <!-- Videolist long press menu messages -->
+  <string name="same_title_exists">Same File Exists</string>
+  <string name="share_text">Share Video</string>
+  <string name="rename_video">Rename Video</string>
+
+  <!-- Videolist Sort menu Setting -->
+  <string name="action_settings">Sort menu</string>
+
+  <!-- Dialog button name -->
+  <string name="ok">OK</string>
+  <string name="cancel">Cancel</string>
+
+  <!-- Sort menu items -->
+  <string name="sort_name_asc">Sort Name Asc</string>
+  <string name="sort_name_dsc">Sort Name Dsc</string>
+  <string name="sort_date_asc">Sort Date Asc</string>
+  <string name="sort_date_dsc">Sort Date Dsc</string>
+  <string name="sort_size_asc">Sort Size Asc</string>
+  <string name="sort_size_dsc">Sort Size Dsc</string>
+  <string name="ai_mode_text">AI MODE</string>
+
+</resources>

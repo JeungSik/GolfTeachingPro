@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menubar_main"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:layout_gravity="top"
+    android:background="@color/colorToolBar"
+    android:orientation="horizontal">
+
+    <!--ImageButton
+        android:id="@+id/menubar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_white_36" /-->
+
+    <ImageButton
+        android:id="@+id/menubar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_home_white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_brush"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_brush_white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_eraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_eraser_white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_select_white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_palette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_palette_white"
+        app:tint="#FFFFFF"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_undo_white"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/menubar_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/ic_redo_white"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

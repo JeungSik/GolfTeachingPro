@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".VideoListActivity">
+    <!-- <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" /> -->
+    <item android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+          android:iconifiedByDefault="false"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView"
+        tools:ignore="HardcodedText" />
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/sort_name_asc"
+            android:title="@string/sort_name_asc"
+            app:showAsAction="never"/>
+        <item android:id="@+id/sort_name_dsc"
+            android:title="@string/sort_name_dsc"
+            app:showAsAction="never"/>
+        <item android:id="@+id/sort_date_asc"
+            android:title="@string/sort_date_asc"
+            app:showAsAction="never"/>
+        <item android:id="@+id/sort_date_dsc"
+            android:title="@string/sort_date_dsc"
+            app:showAsAction="never"/>
+        <item android:id="@+id/sort_size_asc"
+              android:title="@string/sort_size_asc"
+              app:showAsAction="never"/>
+        <item android:id="@+id/sort_size_dsc"
+              android:title="@string/sort_size_dsc"
+              app:showAsAction="never"/>
+    </group>
+
+</menu>
